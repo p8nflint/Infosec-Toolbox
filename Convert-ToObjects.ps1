@@ -1,7 +1,7 @@
 <#
 .SYNOPSIS
     Convert Property : Value strings back into usable objects
-    Intended for use w/ PsExec utility
+    Intended to compliment use of PsExec utility within PoSH scripts
 
 .NOTES
     Name: Convert-ToObjects
