@@ -12,7 +12,6 @@
     https://github.com/p8nflnt/Infosec-Toolbox/blob/main/Get-AdUser-NoPwExpiry.ps1
 #>
 
-
 # Clear variables for repeatability
 Get-Variable -Exclude PWD,*Preference | Remove-Variable -EA 0
 
