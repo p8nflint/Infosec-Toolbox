@@ -103,4 +103,4 @@ Function Install-PsExec {
     }
 } # End Function Install-PsExec
 
-Install-PsExec -AcceptEULA $True
+Install-PsExec -AcceptEULA <BOOL>
