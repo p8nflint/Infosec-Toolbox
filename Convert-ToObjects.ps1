@@ -9,7 +9,7 @@
     Version: 1.0
     DateCreated: 2023-Aug
 
-.LINKS
+.LINK
     https://paytonflint.com/powershell-convert-psexec-run-cmdlet-output-strings-back-to-objects-properties-values/
     https://github.com/p8nflnt/Infosec-Toolbox/blob/main/Convert-ToObjects.ps1
 #>
