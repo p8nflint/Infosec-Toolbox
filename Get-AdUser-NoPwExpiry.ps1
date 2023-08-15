@@ -1,3 +1,18 @@
+<#
+.SYNOPSIS
+    Get AD users where password is set to not expire
+
+.NOTES
+    Name: Get-AdUser-NoPwExpiry
+    Author: Payton Flint
+    Version: 1.0
+    DateCreated: 2023-Aug
+
+.LINK
+    
+#>
+
+
 # Clear variables for repeatability
 Get-Variable -Exclude PWD,*Preference | Remove-Variable -EA 0
 
