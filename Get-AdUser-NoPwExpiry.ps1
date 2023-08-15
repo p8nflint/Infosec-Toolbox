@@ -9,7 +9,7 @@
     DateCreated: 2023-Aug
 
 .LINK
-    
+    https://github.com/p8nflnt/Infosec-Toolbox/blob/main/Get-AdUser-NoPwExpiry.ps1
 #>
 
 
