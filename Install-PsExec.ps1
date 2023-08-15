@@ -11,7 +11,7 @@
 
 .LINKS
     https://adamtheautomator.com/psexec/
-    
+    https://github.com/p8nflnt/Infosec-Toolbox/blob/main/Install-PsExec.ps1
 #>
 
 
