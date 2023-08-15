@@ -9,7 +9,7 @@
     Version: 1.1
     DateCreated: 2023-Aug
 
-.LINKS
+.LINK
     https://adamtheautomator.com/psexec/
     https://github.com/p8nflnt/Infosec-Toolbox/blob/main/Install-PsExec.ps1
 #>
