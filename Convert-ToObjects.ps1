@@ -6,7 +6,7 @@
 .NOTES
     Name: Convert-ToObjects
     Author: Payton Flint
-    Version: 1.0
+    Version: 1.1
     DateCreated: 2023-Aug
 
 .LINK
