@@ -1,20 +1,3 @@
-<#
-.SYNOPSIS
-    Install PsExec.exe of the Sysinternals suite if not installed
-    Optionally set Registry Key to accept EULA (silences prompt on initial execution)
-
-.NOTES
-    Name: Install-PsExec
-    Author: Payton Flint
-    Version: 1.1
-    DateCreated: 2023-Aug
-
-.LINK
-    https://adamtheautomator.com/psexec/
-    https://github.com/p8nflnt/Infosec-Toolbox/blob/main/Install-PsExec.ps1
-#>
-
-
 # Check for PsExec, if not present, install
 Function Install-PsExec {
     param (
@@ -93,9 +76,9 @@ Function Install-PsExec {
     } Else {
         # courtesy of Adam Bertram @ https://adamtheautomator.com/psexec/
         Invoke-WebRequest -Uri 'https://download.sysinternals.com/files/PSTools.zip' -OutFile 'pstools.zip'
-        Expand-Archive -Path 'pstools.zip' -DestinationPath "$env:TEMP\pstools"
-        Move-Item -Path "$env:TEMP\pstools\psexec.exe" .
-        Remove-Item -Path "$env:TEMP\pstools" -Recurse
+        Expand-Archive -Path 'pstools.zip' -DestinationPath "$env:SystemRoot\System32\pstools"
+        Move-Item -Path "$env:SystemRoot\System32\pstools\psexec.exe"
+        Remove-Item -Path "$env:SystemRoot\System32\pstools" -Recurse
         # Accept EULA if specified
         If ($AcceptEULA -eq $True) {
             RegEdit -regPath "HKCU:\SOFTWARE\Sysinternals\PsExec" -regName "EulaAccepted" -regValue "1" -silent $true
@@ -103,4 +86,4 @@ Function Install-PsExec {
     }
 } # End Function Install-PsExec
 
-Install-PsExec -AcceptEULA <BOOL>
+Install-PsExec -AcceptEULA $True
