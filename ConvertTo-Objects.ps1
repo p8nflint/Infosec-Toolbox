@@ -4,14 +4,14 @@
     Intended to compliment use of PsExec utility within PoSH scripts
 
 .NOTES
-    Name: Convert-ToObjects
+    Name: ConvertTo-Objects
     Author: Payton Flint
     Version: 1.1
     DateCreated: 2023-Aug
 
 .LINK
     https://paytonflint.com/powershell-convert-psexec-run-cmdlet-output-strings-back-to-objects-properties-values/
-    https://github.com/p8nflnt/Infosec-Toolbox/blob/main/Convert-ToObjects.ps1
+    https://github.com/p8nflnt/Infosec-Toolbox/blob/main/ConvertTo-Objects.ps1
 #>
 Function ConvertTo-Objects {
     param (
@@ -47,9 +47,9 @@ Function ConvertTo-Objects {
 
     # Return the resulting objects
     Write-Output $objects
-} # End Function Convert-ToObjects
+} # End Function ConvertTo-Objects
 
 # Call the function with the input
-$Output = Convert-ToObjects -inputString $input
+$Output = ConvertTo-Objects -inputString $input
 
 $Output
