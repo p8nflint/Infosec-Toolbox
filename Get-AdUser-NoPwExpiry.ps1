@@ -27,9 +27,9 @@ function Test-ElevatedShell
 $admin = Test-ElevatedShell
 
 If($admin) {
-    Get-ADUser -filter * -Properties PasswordNeverExpires `
-    | Select-Object Name, PasswordNeverExpires `
-    | Where-Object {$_.PasswordNeverExpires -eq $true} `
+    Get-ADUser -filter * -Properties Enabled, PasswordNeverExpires `
+    | Select-Object Name, Enabled, PasswordNeverExpires `
+    | Where-Object {$_.Enabled -eq $true -and $_.PasswordNeverExpires -eq $true} `
     | Sort-Object -Property Name `
     | Export-Csv -Path "$ScriptPath\ADUser-NoPWExpiry.csv" -NoTypeInformation
 } Else {
