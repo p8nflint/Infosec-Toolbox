@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    Convert Property : Value strings back into usable objects
+    Convert key / value pair strings back into usable objects
     Intended to compliment use of PsExec utility within PoSH scripts
 
 .NOTES
