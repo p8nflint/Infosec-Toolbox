@@ -1,3 +1,16 @@
+<#
+.SYNOPSIS
+    Convert plaintext to hex / base64 encoded derived key
+
+.NOTES
+    Name: ConvertTo-PBKDF2Hash
+    Author: Payton Flint
+    Version: 1.0
+    DateCreated: 2023-Sep
+
+.LINK
+    https://github.com/p8nflnt/Infosec-Toolbox/blob/main/ConvertTo-PBKDF2Hash.ps1
+#>
 function ConvertTo-PBKDF2Hash {
     param(
         [string]$password,
